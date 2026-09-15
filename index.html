@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elavo — Legal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#FBF9F5; --text:#242B31; --muted:#5C6873; --faint:#8A9299;
+    --accent:#2970B8; --accent-ink:#1E4E80; --accent-soft:#EAF1F9; --rule:#E7E2D9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#15181B; --text:#E8E9E9; --muted:#A2ABB2; --faint:#77808A;
+      --accent:#6FA6DE; --accent-ink:#BFE0FF; --accent-soft:#1E2A35; --rule:#2A2E32;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .page{ max-width:560px; margin:0 auto; padding:64px 24px 96px; }
+  .mark{
+    width:38px; height:38px; border-radius:11px;
+    background:linear-gradient(160deg, var(--accent) 0%, var(--accent-ink) 100%);
+    margin-bottom:20px;
+  }
+  h1{
+    font-family:"Lora", Georgia, serif; font-weight:600; font-size:2rem;
+    margin:0 0 8px; text-wrap:balance;
+  }
+  p.lede{ color:var(--muted); font-size:1.02rem; line-height:1.6; margin:0 0 40px; }
+  .links{ display:flex; flex-direction:column; gap:12px; }
+  a.card{
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--accent-soft); border-radius:12px; padding:18px 20px;
+    text-decoration:none; color:var(--text); font-weight:600; font-size:1rem;
+  }
+  a.card span.arrow{ color:var(--accent-ink); }
+  footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--rule); font-size:0.85rem; color:var(--faint); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="mark" aria-hidden="true"></div>
+  <h1>Elavo legal documents</h1>
+  <p class="lede">The Privacy Policy and Terms of Use for the Elavo mobile app.</p>
+  <div class="links">
+    <a class="card" href="privacy-policy.html">Privacy Policy <span class="arrow">&rarr;</span></a>
+    <a class="card" href="terms-of-use.html">Terms of Use <span class="arrow">&rarr;</span></a>
+  </div>
+  <footer>Elavo is a product of Held Back LLC.</footer>
+</div>
+</body>
+</html>
